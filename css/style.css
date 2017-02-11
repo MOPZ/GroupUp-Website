@@ -9,7 +9,22 @@ body{
 	background-repeat: no-repeat;
 	width: 186px;
 	height: 30px;
-	display: inline-flex;
+}
+
+.navbar-header{
+	margin:auto;
+}
+
+.googlePlay{
+	background-image: url(../img/Google.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 51px;
+	position: relative;
+	left: 30%;
+	margin-top: 2%;
+	cursor: pointer;
 }
 
 .landing{
@@ -30,14 +45,66 @@ body{
 }
 
 .landing-title{
+	position: relative;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 1em;
-	margin-top:20%;
-	margin-left:25%;
+	margin-top: 20%;
+	margin-left: 25%;
 }
 
 .capslock{
 	text-transform: uppercase;
+}
+
+.landing-mockup{
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 311px;
+	height: 462px;
+
+	position: absolute;
+	left: 50%;
+	top: 20%;
+
+}
+
+
+
+#img1{
+	background-image: url(../img/Boarding.png);
+ 	z-index: 4;
+	animation: xfade 21s 0s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#img2{
+	background-image: url(../img/Boarding2.png);
+	z-index: 3;
+	animation: xfade 21s 5s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#img3{
+	background-image: url(../img/Boarding3.png);
+	z-index: 2;
+	animation: xfade 21s 10s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#img4{
+	background-image: url(../img/Connect.png);
+	z-index: 1;
+	animation: xfade 21s 15s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes xfade{
+
+     0% {opacity: 1;}
+    20% {opacity: 1;}
+    33% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
 }
